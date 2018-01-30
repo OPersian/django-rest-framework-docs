@@ -178,7 +178,7 @@ class DocumentationGenerator():
                 needle = line.find('--')
                 if needle != -1:
                     trim_at = docstring.find(line)
-                    description = "<p>" + docstring[:trim_at] + "</p>"
+                    description = "<span>" + docstring[:trim_at] + "</span>"
                     trimmed = True
 
             params = line.split(' -- ')
